@@ -1,31 +1,133 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ashapura Enterprises</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#121212;
+    color:#ffffff;
+    line-height:1.6;
+}
+
+header{
+    background:#1c1c1c;
+    padding:25px;
+    text-align:center;
+    border-bottom:2px solid #333;
+}
+
+header h1{
+    font-size:40px;
+    color:#ffffff;
+}
+
+header p{
+    color:#bdbdbd;
+    margin-top:5px;
+}
+
+nav{
+    background:#222222;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#d9d9d9;
+}
+
+section{
+    max-width:1000px;
+    margin:auto;
+    padding:50px 20px;
+}
+
+.card{
+    background:#1f1f1f;
+    padding:20px;
+    border-radius:10px;
+    margin-top:20px;
+    border:1px solid #333;
+}
+
+h2{
+    margin-bottom:15px;
+}
+
+footer{
+    background:#1c1c1c;
+    text-align:center;
+    padding:20px;
+    border-top:2px solid #333;
+}
+</style>
+
 </head>
 <body>
 
-<h1>Ashapura Enterprises</h1>
-<p>Aluminium & Glass Solutions</p>
+<header>
+    <h1>Ashapura Enterprises</h1>
+    <p>Aluminium • Glass • ACP Solutions</p>
+</header>
 
-<hr>
+<nav>
+    <a href="#about">About Us</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact Us</a>
+</nav>
 
-<h2>About Us</h2>
-<p>We provide Aluminium Windows, Doors, ACP Cladding and Glass Work.</p>
+<section id="about">
+    <h2>About Us</h2>
+    <div class="card">
+        <p>
+            We provide premium Aluminium Windows, Doors,
+            ACP Cladding, Glass Partitions and Fabrication Solutions.
+        </p>
+    </div>
+</section>
 
-<h2>Products</h2>
-<ul>
-<li>Sliding Windows</li>
-<li>Casement Windows</li>
-<li>ACP Work</li>
-<li>Glass Partition</li>
-</ul>
+<section id="products">
+    <h2>Products</h2>
+    <div class="card">
+        <ul>
+            <li>Sliding Windows</li>
+            <li>Casement Windows</li>
+            <li>ACP Cladding</li>
+            <li>Glass Partitions</li>
+            <li>Aluminium Doors</li>
+        </ul>
+    </div>
+</section>
 
-<h2>Contact Us</h2>
-<p>Phone: Your Number</p>
-<p>Email: Your Email</p>
+<section id="contact">
+    <h2>Contact Us</h2>
+    <div class="card">
+        <p>📞 Phone: +91 XXXXXXXXXX</p>
+        <p>📧 Email: your@email.com</p>
+        <p>📍 Address: Your City, India</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Ashapura Enterprises. All Rights Reserved.
+</footer>
 
 </body>
 </html>
