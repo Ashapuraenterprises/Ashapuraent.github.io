@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products | Ashapura Enterprises</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0b0b0b;
+color:white;
+}
+
+.navbar{
+position:fixed;
+top:0;
+width:100%;
+padding:25px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(15,15,15,.8);
+backdrop-filter:blur(12px);
+border-bottom:1px solid #222;
+z-index:1000;
+}
+
+.logo{
+font-family:'Cormorant Garamond',serif;
+font-size:32px;
+font-weight:700;
+}
+
+.logo a{
+color:white;
+text-decoration:none;
+}
+
+.back{
+color:white;
+text-decoration:none;
+}
+
+.hero{
+padding:150px 20px 80px;
+text-align:center;
+}
+
+.hero h1{
+font-family:'Cormorant Garamond',serif;
+font-size:72px;
+margin-bottom:15px;
+}
+
+.hero p{
+color:#bdbdbd;
+}
+
+.products{
+max-width:1300px;
+margin:auto;
+padding:20px 20px 100px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.card{
+background:#161616;
+border:1px solid #292929;
+border-radius:20px;
+overflow:hidden;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+border-color:#666;
+}
+
+.image{
+height:220px;
+background:#202020;
+display:flex;
+align-items:center;
+justify-content:center;
+color:#777;
+}
+
+.content{
+padding:25px;
+}
+
+.content h2{
+font-family:'Cormorant Garamond',serif;
+font-size:34px;
+margin-bottom:10px;
+}
+
+.content p{
+color:#cfcfcf;
+line-height:1.8;
+}
+
+footer{
+text-align:center;
+padding:30px;
+border-top:1px solid #222;
+color:#888;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">
+<a href="index.html">Ashapura Enterprises</a>
+</div>
+
+<a href="index.html" class="back">← Home</a>
+
+</nav>
+
+<section class="hero">
+
+<h1>Our Products</h1>
+
+<p>
+Premium Aluminium, UPVC, ACP & Glass Solutions
+</p>
+
+</section>
+
+<section class="products">
+
+<div class="card">
+<div class="image">Product Image</div>
+<div class="content">
+<h2>Aluminium Windows</h2>
+<p>Premium sliding, openable and custom aluminium window systems.</p>
+</div>
+</div>
+
+<div class="card">
+<div class="image">Product Image</div>
+<div class="content">
+<h2>UPVC Windows</h2>
+<p>Energy efficient, sound insulated and low maintenance solutions.</p>
+</div>
+</div>
+
+<div class="card">
+<div class="image">Product Image</div>
+<div class="content">
+<h2>ACP Glazing</h2>
+<p>Modern ACP glazing and elevation systems for commercial projects.</p>
+</div>
+</div>
+
+<div class="card">
+<div class="image">Product Image</div>
+<div class="content">
+<h2>Glass Partitions</h2>
+<p>Premium office and residential glass partition systems.</p>
+</div>
+</div>
+
+<div class="card">
+<div class="image">Product Image</div>
+<div class="content">
+<h2>Aluminium Doors</h2>
+<p>Durable and elegant aluminium door solutions.</p>
+</div>
+</div>
+
+</section>
+
+<footer>
+© 2026 Ashapura Enterprises. All Rights Reserved.
+</footer>
+
+</body>
+</html>
