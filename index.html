@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Ashapura Enterprises</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -19,48 +18,9 @@ scroll-behavior:smooth;
 
 body{
 background:#0b0b0b;
-color:white;
+color:#fff;
 font-family:'Inter',sans-serif;
 overflow-x:hidden;
-}
-
-.hero{
-height:100vh;
-background:
-linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.85)),
-url('background.jpg');
-background-size:cover;
-background-position:center;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-}
-
-.hero-content{
-animation:fadeUp 1.5s ease;
-}
-
-.logo{
-width:180px;
-margin-bottom:30px;
-animation:float 4s ease-in-out infinite;
-}
-
-.company-name{
-font-family:'Cormorant Garamond',serif;
-font-size:82px;
-font-weight:700;
-letter-spacing:3px;
-margin-bottom:10px;
-}
-
-.tagline{
-font-size:18px;
-letter-spacing:4px;
-color:#cfcfcf;
-text-transform:uppercase;
 }
 
 .navbar{
@@ -72,15 +32,15 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 padding:25px 8%;
-background:rgba(15,15,15,.75);
-backdrop-filter:blur(14px);
-z-index:1000;
+background:rgba(10,10,10,.8);
+backdrop-filter:blur(15px);
 border-bottom:1px solid rgba(255,255,255,.08);
+z-index:1000;
 }
 
 .brand{
 font-family:'Cormorant Garamond',serif;
-font-size:30px;
+font-size:32px;
 font-weight:700;
 }
 
@@ -100,15 +60,54 @@ transition:.3s;
 opacity:.7;
 }
 
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.85)),
+url('background.jpg');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero-content{
+animation:fadeUp 1.2s ease;
+}
+
+.logo{
+width:180px;
+margin-bottom:25px;
+animation:float 4s ease-in-out infinite;
+}
+
+.company-name{
+font-family:'Cormorant Garamond',serif;
+font-size:80px;
+font-weight:700;
+letter-spacing:3px;
+}
+
+.tagline{
+margin-top:15px;
+font-size:18px;
+letter-spacing:3px;
+color:#d0d0d0;
+text-transform:uppercase;
+}
+
 .section{
 padding:120px 10%;
 }
 
 .section-title{
 font-family:'Cormorant Garamond',serif;
-font-size:60px;
+font-size:58px;
 text-align:center;
-margin-bottom:50px;
+margin-bottom:40px;
 }
 
 .glass-box{
@@ -122,10 +121,10 @@ border-radius:24px;
 }
 
 .about{
+text-align:center;
 font-size:18px;
 line-height:1.9;
 color:#d0d0d0;
-text-align:center;
 }
 
 .contact{
@@ -135,10 +134,10 @@ line-height:2;
 }
 
 footer{
-text-align:center;
 padding:30px;
+text-align:center;
 border-top:1px solid #222;
-color:#9f9f9f;
+color:#888;
 }
 
 .reveal{
@@ -155,7 +154,7 @@ transform:translateY(0);
 @keyframes fadeUp{
 from{
 opacity:0;
-transform:translateY(60px);
+transform:translateY(50px);
 }
 to{
 opacity:1;
@@ -168,7 +167,7 @@ transform:translateY(0);
 transform:translateY(0);
 }
 50%{
-transform:translateY(-12px);
+transform:translateY(-10px);
 }
 }
 
@@ -216,7 +215,7 @@ Ashapura Enterprises
 
 <div class="hero-content">
 
-<img src="logo.png" class="logo">
+<img src="logo.png" alt="Logo" class="logo">
 
 <h1 class="company-name">
 ASHAPURA ENTERPRISES
@@ -242,10 +241,10 @@ About Us
 
 Ashapura Enterprises specializes in Aluminium Windows,
 UPVC Windows, ACP Glazing, Glass Partitions,
-Aluminium Doors and Modern Architectural Solutions.
+Aluminium Doors and Architectural Solutions.
 
-We deliver premium fabrication and glazing solutions
-for residential, commercial and industrial projects.
+We provide premium fabrication, glazing and installation
+services for residential, commercial and industrial projects.
 
 </div>
 
@@ -263,11 +262,15 @@ Contact Us
 
 <div class="contact">
 
-📞 +91 XXXXXXXXXX<br><br>
+📞 +91 YOUR MOBILE NUMBER
 
-📧 info@ashapuraenterprises.com<br><br>
+<br><br>
 
-📍 Gujarat, India
+📧 your@email.com
+
+<br><br>
+
+📍 Your Address
 
 </div>
 
@@ -283,12 +286,12 @@ Contact Us
 
 window.addEventListener('scroll',()=>{
 
-document.querySelectorAll('.reveal').forEach(section=>{
+document.querySelectorAll('.reveal').forEach(el=>{
 
-const top=section.getBoundingClientRect().top;
+const top=el.getBoundingClientRect().top;
 
 if(top < window.innerHeight-100){
-section.classList.add('active');
+el.classList.add('active');
 }
 
 });
